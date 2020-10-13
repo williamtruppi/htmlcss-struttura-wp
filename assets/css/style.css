@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   margin: auto;
+  font-family: 'Montserrat',Arial,Helvetica,sans-serif;
 }
 
 body{
@@ -40,19 +41,18 @@ ul.nav_bar{
   height: 100%;
 }
 
-ul li{
+nav ul li{
   list-style: none;
   display: inline-block;
   padding: 0 10px;
   height: 100%;
 }
 
-ul li:hover{
+nav ul li:hover{
   background-color: #302b27;
 }
 
-li a{
-  font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+nav li a{
   color: white;
   text-decoration: none;
   font-weight: 400;
@@ -80,8 +80,24 @@ main::after{
 .organic_themes{
   width: 20%;
   height: 400px;
-  background-color: blue;
+  background-color: white;
   border-radius: 10px;
+  padding: 8px;
+}
+
+.organic_themes i{
+  font-size: 30px;
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  float: left;
+}
+
+.organic_themes h3{
+  float: left;
+  font-size: 30px;
+  margin-left: 5px;
 }
 
 .central_column{
@@ -104,4 +120,11 @@ main::after{
   background-color: blue;
   border-radius: 10px;
   margin-bottom: 40px;
+}
+
+aside li{
+  list-style: none;
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
 }
