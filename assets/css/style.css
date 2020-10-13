@@ -13,8 +13,8 @@ body{
   margin-top: 10px;
   margin-bottom: 10px;
   width: 1000px;
-  height: 100vh;
-  background-color: red;
+  height: 1500px;
+  background-color: yellow;
 }
 
 header{
@@ -32,7 +32,7 @@ nav{
   height: 50px;
   background-color: #504741;
   text-align: center;
-  line-height: 48px;
+  line-height: 50px;
 }
 
 ul.nav_bar{
@@ -44,7 +44,6 @@ ul li{
   list-style: none;
   display: inline-block;
   padding: 0 10px;
-  vertical-align: middle;
   height: 100%;
 }
 
@@ -59,5 +58,50 @@ li a{
   font-weight: 400;
   height: 100%;
   display: inline-block;
-  vertical-align: middle;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  background-color: green;
+}
+
+main::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.float_left{
+  float: left;
+}
+
+.organic_themes{
+  width: 20%;
+  height: 400px;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.central_column{
+  width: 52%;
+  height: 350px;
+  background-color: blue;
+  border-radius: 10px;
+  margin: 0 40px;
+}
+
+.right_side{
+  width: 20%;
+  height: 800px;
+  background-color: lightblue;
+}
+
+.text_widget{
+  width: 100%;
+  height: 380px;
+  background-color: blue;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
