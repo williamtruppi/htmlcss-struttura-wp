@@ -16,6 +16,12 @@ body{
   width: 1000px;
 }
 
+.container::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
 header{
   width: 100%;
   height: 380px;
@@ -63,7 +69,7 @@ nav li a{
 
 main{
   width: 100%;
-  height: 1270px;
+  /* height: 1270px; */
   margin-top: 10px;
 }
 
@@ -111,13 +117,12 @@ main::after{
   height: 350px;
   background-color: white;
   border-radius: 10px;
-  margin: 0 40px;
   padding: 20PX;
+  margin: 0 40px;
 }
 
 .right_side{
   width: 20%;
-  height: 800px;
 }
 
 .text_widget{
@@ -167,8 +172,4 @@ footer .bottom i{
 footer .bottom i:hover{
   cursor: pointer;
   color: blue;
-}
-
-.fab fa-instagram{
-  margin: 50px;
 }
